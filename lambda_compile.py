@@ -18,7 +18,7 @@ def lambda_handler(event,context):
     # Read existing data from destination (if it exists)
     try:
         existing_data_response = s3.get_object(Bucket=outputbucket, Key=outputfile)
-        existing_data = response["Body"].read().decode("utf-8")
+        existing_data = existing_data_response["Body"].read().decode("utf-8")
     except s3.exceptions.NoSuchKey:
         # If csv file doesn't exist, create empty string
         existing_data = ''
