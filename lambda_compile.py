@@ -31,6 +31,7 @@ def lambda_handler(event,context):
         striped_data = new_data.strip().split('\n')
         new_data_without_header = striped_data[1:]
         upload_data = '\n'.join(new_data_without_header)
+        existing_data = existing_data + '\n'
     else:
         upload_data = new_data
 
