@@ -20,5 +20,5 @@ The AWS data pipeline for AirNow API is designed to capture hourly air quality f
 ### Sample Response
 ![response](response.png)
 
-### Sample Compiled file (*To be uploaded*)
+### Sample Compiled file
 ![compiled](compiled.png)
